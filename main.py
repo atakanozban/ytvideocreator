@@ -14,20 +14,16 @@ def find_files(directory):
     return mp3_files
 
 def create_video(mp3_file, image_file):
-    # Create audio clip
+
     audio_clip = AudioFileClip(mp3_file)
     
-    # Create image clip and set duration to match audio
     image_clip = ImageClip(image_file)
     image_clip = image_clip.set_duration(audio_clip.duration)
 
-    # Combine image and audio into a video
     video = image_clip.set_audio(audio_clip)
     
-    # Extract the name of the mp3 file without extension for the video name
     output_file = os.path.splitext(os.path.basename(mp3_file))[0] + ".mp4"
     
-    # Export video
     video.write_videofile(output_file, codec="libx264", fps=24)
 
 if __name__ == "__main__":
