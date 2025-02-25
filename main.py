@@ -34,6 +34,6 @@ if __name__ == "__main__":
     if mp3_files and image_file:
         for mp3_file in mp3_files:
             create_video(mp3_file, image_file)
-            print(f"Video başarıyla {mp3_file} dosyasından oluşturuldu!")
+            print(f"The video succesfully created from {mp3_file}!")
     else:
-        print("MP3 dosyası veya resim dosyası bulunamadı!")
+        print("MP3 nor image file not found!")
