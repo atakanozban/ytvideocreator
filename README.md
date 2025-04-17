@@ -1,7 +1,13 @@
-# YouTube Automatic Video Creator
+# YouTube Automatic Video Creator & Uploader
 
-Convert each music file to video file with one photo.
+Create and upload your video automatically to YouTube. This tool retrieves the audio and image files from the scripts directory and then uploads them directly to YouTube using the user's client secret. It does not store the video file on the user's computer.
 
-# How It Works
+### How It Works (in 3 steps)
 
-When you put the python file in the directory you want, it combines the audio and photo in that directory and turns it into a video. A video is created for each audio file from a single photo. When you open the file it starts to creating video files automaticly.
+1. Create a new folder and import your audio and image files into the folder which is you created new.
+2. Download your client secret file from Google Developers (YouTube API v3)
+3. Run the script and login to your Google account
+
+### Support my work
+
+![Buy Me a Coffee](https://buymeacoffee.com/ozbanatakan)
